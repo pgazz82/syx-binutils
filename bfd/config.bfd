@@ -591,6 +591,10 @@ case "${targ}" in
     targ_defvec=i386_elf32_vec
     targ_selvecs="iamcu_elf32_vec i386_coff_vec"
     ;;
+  i[3-7]86-*-syx*)
+    targ_defvec=i386_elf32_vec
+    targ_selvecs="iamcu_elf32_vec i386_coff_vec"
+    ;;
   i[3-7]86-*-solaris2*)
     targ_defvec=i386_elf32_sol2_vec
     targ_selvecs="iamcu_elf32_vec i386_coff_vec i386_pei_vec"
@@ -664,7 +668,7 @@ case "${targ}" in
     targ_defvec=i386_elf32_vec
     targ_selvecs=
     targ64_selvecs=x86_64_elf64_vec
-    ;;
+    ;;  
 #ifdef BFD64
   x86_64-*-cloudabi*)
     targ_defvec=x86_64_elf64_cloudabi_vec

@@ -400,6 +400,10 @@ i[3-7]86-*-elf* | i[3-7]86-*-rtems* | i[3-7]86-*-genode*)
 			targ_emul=elf_i386
 			targ_extra_emuls=elf_iamcu
 			;;
+i[3-7]86-*-syx*)
+			targ_emul=elf_i386_syx
+			targ_extra_emuls=elf_i386
+			;;
 i[3-7]86-*-dragonfly*)	targ_emul=elf_i386
 			targ_extra_emuls="elf_iamcu i386bsd"
 			;;
